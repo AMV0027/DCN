@@ -1,0 +1,1309 @@
+
+Ex.No:1	Introduction of Simulation Tools
+	
+
+AIM:
+	To study the introduction of simulation tools NS3, Packet sniffer, Wireshark, Cisco packet sniffer, NS2.
+STUDY:
+Network 
+A network consists of two or more computers that are linked in order to share resources (such as printers and CDs), exchange files, or allow electronic communications. 
+The computers on a network may be linked through cables, telephone lines, radio waves, satellites, or infrared light beams.
+Types of Networks
+1.	LAN 
+2.	WAN
+3.	MAN
+LAN (Local Area Network)
+It is a network that is confined to a relatively small area. It is generally limited to a geographic area such as a writing lab, school, or building.
+WAN (Wide Area Network)
+It connect networks in larger geographic areas, such as Florida, the United States, or the world. Dedicated transoceanic cabling or satellite uplinks may be used to connect this type of global network.
+MAN (Metropolitan Area Network)
+It is a computer network that interconnects users with computer resources in a geographic region of the size of a metropolitan area.
+
+Internet  
+It is a global system of interconnected computer networks that uses the internet protocol suite (TCP/IP) to link computers to communicate with each other between networks and devices.
+
+
+Network Simulation Tools
+Network Simulator (NS) is simply a discrete event-driven network simulation tool for studying the dynamic nature of communication networks. Network Simulator 2 (NS2) provides substantial support for simulation of different protocols over wired and wireless networks.
+1.	NS3
+2.	Packet sniffer
+3.	Wireshark
+4.	Cisco packet tracer
+5.	NS2
+Network Simulator
+NS-3 is a discrete-event network simulator for Internet systems, targeted primarily for research and educational use. ns-3 is free, open-source software, licensed under the GNU GPLv2 license, and maintained by a worldwide community.
+1.	Tracing of the nodes:
+NS3 allows us to trace the routes of the nodes which helps us to know how much data is send or received. Trace files are generated to monitor these activities.
+
+2.	NetAnim:
+It stands for Network Animator.
+It is an animated version of how network will look in real and how data will be transferred from one node to another node.
+
+3.Pcap file:
+NS3 helps to generate pcap file which can be used to get all information of the packets.
+
+  4. gnuPlot:
+It is used to plot graphs from the data which we get from trace file of NS3.
+It gives more accurate graph compare to to other graph making tools and also it is less complex than other tools.
+
+ 
+
+Packet sniffer
+A packet sniffer also known as a packet analyzer, protocol analyzer or network analyzer is a piece of hardware  or software used to  monitor network traffic.
+Sniffers work by examining streams of data packets that flow between computers on a network as well as between networked computers and the larger Internet.
+ 
+
+Wireshark
+Wireshark is the world's foremost and widely-used network protocol analyzer. 
+Some command line tools are shipped together with Wireshark. These tools are useful to work with capture files.
+•	capinfos is a program that reads a saved capture file and returns any or all of several statistics about that file
+•	dumpcap a small program whose only purpose is to capture network traffic, while retaining advanced features like capturing to multiple files (since version 0.99.0). 
+•	Dumpcap is the engine under the Wireshark/tshark hood. For long-term capturing, this is the tool you want.
+•	editcap edit and/or translate the format of capture files
+•	mergecap merges multiple capture files into one
+•	randpkt random packet generator
+•	rawshark dump and analyze raw libpcap data
+•	reordercap reorder input file by timestamp into output file
+•	text2pcap generates a capture file from an ASCII hexdump of packets
+tshark is the command-line equivalent of Wireshark, similar in many respects to tcpdump/WinDump but with many more features. Learn it, use it, love it.
+Wrappers
+•	dumpcapui - A GUI front-end for dumpcap.exe that helps you in setting up dumpcap.exe captures and allows storing and retrieving of those settings at a later time. (Windows)
+•	Net::Sharktools - Use Wireshark's packet dissection engine from Perl.
+•	Packet Dump Decode (pdd) is a simple and convenient GUI wrapper around the Wireshark tools to convert packet hexdumps into well formatted xml (viz. text2pcap and tshark). Using pdd, you just need to copy-paste the hexdump into pdd and hit the "Decode" button (GPL, Linux/Win32)
+•	Packet Hexdump Decoder (phd) is a web-based utility that uses Wireshark tools to decode packet hexdumps online.
+•	Sharktools - Use Wireshark's packet dissection engine from Matlab and Python (announcement).
+•	Webshark.io - Web interface using sharkd as backend. 
+•	Termshark - Terminal user interface for tshark. Written in Go, supports Linux/macOS/FreeBSD/Windows.
+Scripts
+•	dumpcap.bat A batch file front-end for dumpcap.exe. It allows you to save dumpcap.exe settings, be notified of capture events or trigger dumpcap.exe capturing after a capture event occurs. It also provides hooks for performing custom actions through user-defined batch files, among other things. In order to get the most out of this batch file, it is recommended that you also download Handle.exe as well as mailsend1.17b14.exe, being sure to rename it to mailsend.exe. These executables should be saved either in a directory that is in your PATH or in the same directory as dumpcap.bat._itself.
+•	maxfiles.bat A batch file to limit either the number of files in a directory to a specified limit, or the total disk space consumed by those files or both.
+•	menushark, a Bourne shell menu script to allow users to employ the use of tshark by answering a few menu questions. The script also gives you the command that the menu system has made to try to teach you how to use tshark at the command line.
+•	mpeg_dump, a Lua script that adds a Wireshark extension to dump MPEG-2 transport stream packets (ISO/IEC 13818-1) from a network capture to a file, for example, to extract one or more mpeg PIDs that were transported via UDP unicast or multicast.
+•	osXextraction, a macOS bash script to extract particular packet types from a capture file 
+•	RtpH263DumpScript, a perl script to dump H.263 video data
+•	tektronix2pcap, a script to convert Tektronix rf5 files to pcap format that can be loaded into Wireshark. Note that current versions of Wireshark can directly read rf5 binary captures.
+•	update-ws-profiles and update-ws-profiles.bat automate changing strings in a collection of Wireshark profiles.
+•	update_geoip.bat A batch file inspired by Jasper Bongertz's UpdateGeoIPDB.cmd file that makes it easier to update the MaxMind GeoIP database files. (GPL, Windows)
+ 
+
+Network Simulator 2
+Ns is a discrete event simulator targeted at networking research. Ns provides substantial support for simulation of TCP, routing, and multicast protocols over wired and wireless (local and satellite) networks. 
+
+
+Network Simulation Tools List:
+MININET:
+•	Supports research in SDN[Software defined networks]
+•	Based on virtualization technology also to create thousands of virtual machine in one single machine
+•	Requires the knowledge of Python scripting
+•	Works on Unix/ Linux based systems
+MANAGE LARGE NETWORK[MLN]:
+•	Virtual Machine administration tool also used to run virtual networks based on VMware server, User Mode linux and Xen.
+•	Open source tool
+•	Supports expandable configuration language also using plug-ins
+CLOONIX:
+•	Provides enhanced GUI[Graphical user interface] support
+•	Uses QEMU/KVM also for creating virtual machines
+•	Contains a large variety of pre build file system, which can also be used as virtual machines.
+MARIONNET:
+•	High level simulation tool also used to produce accurate behavior of network using the GUI components like hubs, switches, computers and also routers.
+•	Used as a educational tool due to its enhanced GUI capability and also practice lab configuration
+SHoX:
+•	Object oriented network simulator [written in java]
+•	Targeted at wireless network simulation
+•	Communicates through events and also contains special module called “AirModule”.
+•	Supports all the seven OSI layers, also in which five layers are default layers.
+
+SICOSYS:
+•	General purpose interconnection network simulator used for multiprocessor systems to model and also simulate variety of message routers.
+•	Based on also object oriented concept and implemented in C++ language.
+NEUROGRID:
+•	Java based network simulator used to compare file sharing P2P systems like Gnutella, freenet and also other Neurogrid systems.
+•	It is a Single threaded event simulator which also uses configuration file to define a protocol to be simulated.
+ 
+
+CISCO packet tracker
+
+Packet Tracer is a cross-platform visual simulation tool designed by Cisco Systems that allows users to create network topologies and imitate modern computer networks. The software allows users to simulate the configuration of Cisco routers and switches using a simulated command line interface.
+Workspace:
+1.	Logical 
+Logical workspace shows the logical network topology of the network the user has built. It represents the placing, connecting and clustering virtual network devices.
+2.	Physical 
+Physical workspace shows the graphical physical dimension of the logical network. It depicts the scale and placement in how network devices such as routers, switches and hosts would look in a real environment. It also provides geographical representation of networks, including multiple buildings, cities and wiring closets.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the study on network and network simulation tools has been successfully.
+
+Ex.No:2	Basic Linux Commands
+	
+AIM:
+		To execute the basic linux directory, file manipulation, network commands.
+	COMMANDS:
+	LINUX DIRECTORY COMMANDS
+1. pwd Command
+    The pwd command is used to display the location of the current working directory.
+    Syntax: pwd
+2. mkdir Command
+The mkdir command is used to create a new directory under any directory.
+     Syntax: mkdir <directory name>  
+3. rmdir Command
+      The rmdir command is used to delete a directory.
+      Syntax: rmdir <directory name>  
+4. ls Command
+      The ls command is used to display a list of content of a directory.
+      Syntax:
+    1. ls
+    2. ls -l
+    3. ls -R
+5. cd Command
+      The cd command is used to change the current directory.
+      Syntax: cd <directory name>
+Output:
+ 
+ 
+ 
+LINUX FILE COMMANDS
+1. touch Command
+The touch command is used to create empty files. We can create multiple empty files by
+executing it once.
+Syntax:  1. touch <file name> 
+              2. touch <file1 file2>      
+ 
+2. cat Command
+      The cat command is a multi-purpose utility in the Linux system. It can be used to create a
+      file, display content of the file, copy the content of one file to another file, and more.
+ Syntax:
+1. cat [OPTION]... [FILE]..  
+To create a file, execute it as follows:
+          1. cat <;file name>  
+           2. // Enter file content  
+Press CTRL+ D keys to save the file. To display the content of the file, execute it as follows:
+               cat <file name>      
+
+3. rm Command
+       The rm command is used to remove a file.
+        Syntax:  rm <file name>
+         
+ 4. cp Command
+      The cp command is used to copy a file or directory.
+      Syntax:  cp <existing file name> <new file name>
+          
+	
+  5. mv Command
+      The mv command is used to move a file to another file.
+     Syntax:   mv <file name> <filename>
+          
+
+LINUX FILE CONTENT COMMANDS
+1. head Command
+The head command is used to display the content of a file. It displays the first 10 lines of            file.
+     Syntax:  head <file name> 
+ 2. tail Command
+The tail command is similar to the head command.  The difference between both            commands is that it display the last ten lines of the file content.  It is useful for reading the error message.
+       Syntax: tail <file name>  
+  3. tac Command
+ The tac command is the reverse of cat command, as its name specified. It displays the file
+      content in reverse order (from the last line).
+      Syntax:  tac <file name>  
+  4. more command
+The more command is quite similar to the cat command, as it is used to display the file      content in the same way that the cat command does. The only difference between both commands is that, in case of larger files, the more command displays screenful output at      time             
+      In more command, the following keys are used to scroll the page:
+      Syntax:  more <file name>  
+  5. less Command
+The less command is similar to the more command. It also includes some extra features
+     such as adjustment in width and height of the terminal. Comparatively, the more
+      command cuts the output in the width of the terminal.
+      Syntax: less <file name>
+OUTPUT:
+ 
+LINUX FILTER COMMANDS
+1. cut Command
+The cut command is used to select a specific column of a file. The &#39;-d&#39; option is  used as a delimiter, and it can be a space (‘’), a slash (/), a hyphen (-), or anything else. And, the ‘-f ’ option is used to specify a column number.
+     Syntax:  cut -d(delimiter) -f(columnNumber) <filename>  
+2. grep Command
+    The grep is the most powerful and used filter in a Linux system. The grep stands for
+     global regular expression print.&quot; It is useful for searching the content from a file.
+     Generally, it is used with the pipe.
+     Syntax:  command | grep <searchWord>  
+  3. tr Command
+      The tr command is used to translate the file content like from lower case to upper case.
+      Syntax:  command | tr <old> <new>
+
+ 4. wc Command 
+The wc command is used to count the lines, words, and characters in a file.
+     Syntax:  wc <file name>  
+OUTPUT:
+ 
+
+LINUX UTILITY COMMANDS
+1. date Command
+The date command is used to display date, time, time zone, and more.
+     Syntax:  date  
+2. cal Command
+The cal command is used to display the current month calendar with the current date highlighted.
+     Syntax:  cal 
+3. sleep Command
+The sleep command is used to hold the terminal by the specified amount of time. By
+     default, it takes time in seconds.
+     Syntax:  sleep <time> 
+4.  man 
+It is used to display the user manual of any command
+     Syntax: man COMMAND NAME
+5. exit Command
+    Linux exit command is used to exit from the current shell.
+Syntax:  exit  
+6. clear Command
+Linux clear command is used to clear the terminal screen.
+    Syntax:  clear  
+
+OUTPUT:
+ 
+ 
+
+LINUX NETWORKING COMMANDS
+ 1. ip Command
+Linux ip command is an updated version of the ipconfig command. It is used to assign an
+     IP address, initialize an interface, disable an interface.
+     Syntax:  ip a or ip addr  
+2.  mail Command
+The mail command is used to send emails from the command line.
+     Syntax:  mail -s <Subject> <recipient address>
+OUTPUT:
+      
+
+RESULT:
+Thus the linux commands have been executed and output is verifies successfully.
+
+Ex.No:3	Installation and configuration of Network Simulator
+	
+AIM:
+To install and configure the network simulator in linux environment.
+COMMANDS:
+# Make sure that you are on the Home Directory
+  	cd ~
+        
+     # Update the Ubuntu Repo and Existing Applications
+	sudo apt update
+	sudo apt -y upgrade
+    
+ # Install Core Dependencies for Build and Compilation
+	sudo apt install build-essential libsqlite3-dev libboost-all-dev libssl-dev git 	python3-setuptools castxml 	 
+  # Install Dependencies for NS-3 Python bindings
+	sudo apt install gir1.2-goocanvas-2.0 gir1.2-gtk-3.0 libgirepository1.0-dev 		python3-dev python3-gi python3-gi-cairo python3-pip python3-pygraphviz 		python3-pygccxml
+	 
+  # Install Dependencies for NS-3
+ 	sudo apt install g++ pkg-config sqlite3 qt5-default mercurial ipython3 			openmpi-bin openmpi-common openmpi-doc libopenmpi-dev autoconf cvs 		bzr unrar gdb valgrind uncrustify doxygen graphviz imagemagick python3-		sphinx dia tcpdump libxml2 libxml2-dev cmake libc6-dev libc6-dev-i386 			libclang-6.0-dev llvm-6.0-dev automake
+           
+# Install Additional Python Packages
+	sudo su 
+	cd
+	pip3 install kiwi
+	exit
+	cd
+	 
+# Download and Install NS-3 and NetAnim
+      # download from ns-3 server
+         wget -c https://www.nsnam.org/releases/ns-allinone-3.33.tar.bz2
+            
+      # extract tar.bz2
+           tar -xvjf ns-allinone-3.33.tar.bz2
+            
+      # go back to home folder
+           cd
+     # navigate to ns-3 directory (not the NS-3 all in one)
+           cd ns-allinone-3.33/ns-3.33/
+     
+
+# Configure the installation
+    ./waf configure --enable-examples 
+        
+# Build ns-3 installation
+    ./waf
+        
+ # to check whether installation was a success
+    ./waf --run hello-simulator
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+	Thus the Network Simulator was installed in the linux environment.
+
+Ex.No:4	Installation and configuration of NetAnim
+	
+
+AIM:
+To install and configure the NetAnim in linux environment. 
+
+COMMANDS:
+# navigate to netanim dir.	
+cd ns-allinone-3.33/netanim-3.108/
+ 
+ # configure the build
+make clean
+ 
+ # compile the build
+qmake NetAnim.pro
+ 
+# build netanim installation
+make
+# to execute NetAnim 
+./NetAnim
+ 
+
+
+
+
+
+
+
+
+
+
+
+OUTPUT:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the NetAnim was successfully installed and executed.
+
+Ex.No:5	Connecting Two Nodes using NS3
+	
+
+
+AIM:
+To write the program in NS3 to connect two nodes in linux environment.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “first.cc” in scratch folder and add the NetAnim module.
+Step 4: Save the file and Now the xml was created in source file.
+Step 5: Open the NetAnim using “./NetAnim” command.
+Step 6: Open the first.xml file  in the directory.
+Step 7: Now the output will display in the NetAnim window.
+Step 8: Close the window by “ctrl+c”.	
+
+PROGRAM:
+      #include "ns3/core-module.h"
+      #include "ns3/network-module.h"
+      #include "ns3/internet-module.h"
+      #include "ns3/point-to-point-module.h"
+      #include "ns3/applications-module.h"
+      #include "ns3/netanim-module.h"
+      using namespace ns3;
+
+      NS_LOG_COMPONENT_DEFINE ("FirstScriptExample");
+      int main (int argc, char *argv[])
+    {
+       CommandLine cmd (__FILE__);
+       cmd.Parse (argc, argv);
+  
+      Time::SetResolution (Time::NS);
+      LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+      LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+
+     NodeContainer nodes;
+     nodes.Create (2);
+
+     PointToPointHelper pointToPoint;
+     pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
+     pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+
+     NetDeviceContainer devices;
+    devices = pointToPoint.Install (nodes);
+
+    InternetStackHelper stack;
+    stack.Install (nodes);
+
+    Ipv4AddressHelper address;
+    address.SetBase ("10.1.1.0", "255.255.255.0");
+
+    Ipv4InterfaceContainer interfaces = address.Assign (devices);
+
+    UdpEchoServerHelper echoServer (9);
+
+    ApplicationContainer serverApps = echoServer.Install (nodes.Get (1));
+    serverApps.Start (Seconds (1.0));
+    serverApps.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper echoClient (interfaces.GetAddress (1), 9);
+    echoClient.SetAttribute ("MaxPackets", UintegerValue (1));
+    echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    ApplicationContainer clientApps = echoClient.Install (nodes.Get (0));
+    clientApps.Start (Seconds (2.0));
+    clientApps.Stop (Seconds (10.0));
+    AnimationInterface anim ("anim1.xml");
+    anim.SetConstantPosition(nodes.Get(0), 1.0, 2.0);
+    anim.SetConstantPosition(nodes.Get(1), 2.0, 3.0);
+    Simulator::Run ();
+    Simulator::Destroy ();
+    return 0;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+OUTPUT:	
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the connecting of two nodes was executed and output was successfully verified.
+
+Ex.No:6	Connecting Three Nodes using NS3
+	
+AIM:
+To write the program in NS3 to connect two nodes in linux environment.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “first.cc” in scratch folder and add the NetAnim module.
+Step 4: Create third node in the first.cc file.
+Step 5: Save the file and Now the xml was created in source file.
+Step 6: Compile the file in the terminal and xml file will generated.
+Step 7: Open the NetAnim using “./NetAnim” command.
+Step 8: Open the first.xml file  in the directory.
+Step 9: Now the output will display in the NetAnim window.
+
+PROGRAM:
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/netanim-module.h"
+using namespace ns3;
+NS_LOG_COMPONENT_DEFINE ("FirstScriptExample");
+int main (int argc, char *argv[])
+{
+  CommandLine cmd (__FILE__);
+  cmd.Parse (argc, argv);
+  
+  Time::SetResolution (Time::NS);
+  LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+  LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+
+  NodeContainer nodes;
+  nodes.Create (3);
+
+  PointToPointHelper pointToPoint;
+  pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
+  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+
+  NetDeviceContainer devices;
+  devices = pointToPoint.Install (nodes.Get(0),nodes.Get(1));
+  
+  NetDeviceContainer devices1;
+  devices1 = pointToPoint.Install (nodes.Get(2),nodes.Get(1));
+
+  InternetStackHelper stack;
+  stack.Install (nodes);
+
+  Ipv4AddressHelper address;
+  address.SetBase ("10.1.1.0", "255.255.255.0");
+  
+  Ipv4AddressHelper address1;
+  address1.SetBase ("198.168.1.0", "255.255.255.0");
+
+  Ipv4InterfaceContainer interfaces = address.Assign (devices);
+  Ipv4InterfaceContainer interfaces1 = address.Assign (devices1);
+
+
+  UdpEchoServerHelper echoServer (9);
+  UdpEchoServerHelper echoServer1 (10);
+
+  ApplicationContainer serverApps = echoServer.Install (nodes.Get (1));
+  serverApps.Start (Seconds (1.0));
+  serverApps.Stop (Seconds (10.0));
+
+  UdpEchoClientHelper echoClient (interfaces.GetAddress (1), 9);
+  echoClient.SetAttribute ("MaxPackets", UintegerValue (1));
+  echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+  
+  UdpEchoClientHelper echoClient1 (interfaces.GetAddress (1), 10);
+  echoClient1.SetAttribute ("MaxPackets", UintegerValue (1));
+  echoClient1.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  echoClient1.SetAttribute ("PacketSize", UintegerValue (1024));
+
+
+  ApplicationContainer clientApps = echoClient.Install (nodes.Get (0));
+  clientApps.Start (Seconds (2.0));
+  clientApps.Stop (Seconds (6.0));
+  
+  ApplicationContainer clientApps1 = echoClient1.Install (nodes.Get (2));
+  clientApps1.Start (Seconds (7.0));
+  clientApps1.Stop (Seconds (10.0));
+
+  AnimationInterface anim("anim1.xml");
+  anim.SetConstantPosition(nodes.Get(0),1.0,2.0);
+  anim.SetConstantPosition(nodes.Get(1),2.0,3.0);
+  anim.SetConstantPosition(nodes.Get(2),3.0,4.0);
+  Simulator::Run ();
+  Simulator::Destroy ();
+  return 0;
+}	
+OUTPUT:
+ 
+ 
+ 
+RESULT:
+Thus the connecting of three nodes was executed and output was successfully verified.
+
+Ex.No:7	Connecting Topology using NS3
+	
+AIM:
+To write the program in NS3 to connect two nodes in linux environment.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “second.cc” in scratch folder and add the NetAnim module.
+Step 4: Create multi nodes for topology in the second.cc file.
+Step 5: Save the file and Now the xml was created in source file.
+Step 6: Compile the file in the terminal and xml file will generated.
+Step 7: Open the NetAnim using “./NetAnim” command.
+Step 8: Open the first.xml file  in the directory.
+Step 9: Now the output will display in the NetAnim window.
+PROGRAM:
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/csma-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/ipv4-global-routing-helper.h"
+#include "ns3/netanim-module.h"
+using namespace ns3;
+NS_LOG_COMPONENT_DEFINE ("SecondScriptExample");
+int main (int argc, char *argv[])
+{
+  bool verbose = true;
+  uint32_t nCsma = 3;
+  CommandLine cmd (__FILE__);
+  cmd.AddValue ("nCsma", "Number of \"extra\" CSMA nodes/devices", nCsma);
+  cmd.AddValue ("verbose", "Tell echo applications to log if true", verbose);
+  cmd.Parse (argc,argv);
+  if (verbose)
+    {
+      LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+      LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+    }
+
+  nCsma = nCsma == 0 ? 1 : nCsma;
+
+  NodeContainer p2pNodes;
+  p2pNodes.Create (2);
+
+  NodeContainer csmaNodes;
+  csmaNodes.Add (p2pNodes.Get (1));
+  csmaNodes.Create (nCsma);
+
+  PointToPointHelper pointToPoint;
+  pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
+  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+
+  NetDeviceContainer p2pDevices;
+  p2pDevices = pointToPoint.Install (p2pNodes);
+
+  CsmaHelper csma;
+  csma.SetChannelAttribute ("DataRate", StringValue ("100Mbps"));
+  csma.SetChannelAttribute ("Delay", TimeValue (NanoSeconds (6560)));
+
+  NetDeviceContainer csmaDevices;
+  csmaDevices = csma.Install (csmaNodes);
+
+  InternetStackHelper stack;
+  stack.Install (p2pNodes.Get (0));
+  //stack.Install (p2pNodes.Get (1));
+  stack.Install (csmaNodes);
+
+  Ipv4AddressHelper address;
+  address.SetBase ("172.16.1.0", "255.255.255.0");
+  Ipv4InterfaceContainer p2pInterfaces;
+  p2pInterfaces = address.Assign (p2pDevices);
+
+  address.SetBase ("172.16.2.0", "255.255.255.0");
+  Ipv4InterfaceContainer csmaInterfaces;
+  csmaInterfaces = address.Assign (csmaDevices);
+
+  UdpEchoServerHelper echoServer (9);
+
+  ApplicationContainer serverApps = echoServer.Install (csmaNodes.Get (nCsma));
+  serverApps.Start (Seconds (1.0));
+  serverApps.Stop (Seconds (10.0));
+
+  UdpEchoClientHelper echoClient (csmaInterfaces.GetAddress (nCsma), 9);
+  echoClient.SetAttribute ("MaxPackets", UintegerValue (3));
+  echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+
+  ApplicationContainer clientApps = echoClient.Install (p2pNodes.Get (0));
+  clientApps.Start (Seconds (2.0));
+  clientApps.Stop (Seconds (10.0));
+
+  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+
+  pointToPoint.EnablePcapAll ("second");
+  csma.EnablePcap ("csma1", csmaDevices.Get (1), true);
+  csma.EnablePcap ("csma2", csmaDevices.Get (3), true);
+  
+  AnimationInterface anim("second.xml");
+  anim.SetConstantPosition(p2pNodes.Get(0),10.0,10.0);
+  anim.SetConstantPosition(p2pNodes.Get(0),20.0,20.0);
+  anim.SetConstantPosition(csmaNodes.Get(1),30.0,30.0);
+  anim.SetConstantPosition(csmaNodes.Get(2),40.0,40.0);
+  anim.SetConstantPosition(csmaNodes.Get(3),50.0,50.0);
+
+  Simulator::Run ();
+  Simulator::Destroy ();
+  return 0;
+}
+
+OUTPUT:
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the topology was implemented in NS3 and output was successfully verified.
+
+
+
+Ex.No:8a	Connecting Multiple Routers and Nodes and building Hybrid Topology in NS3
+	
+AIM:
+To write the program to connect multiple routers and nodes for building a hybrid topology in NS3.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “second.cc” in scratch folder and add the NetAnim module.
+Step 4: Create multi routers and nodes for hybrid topology in the second.cc file.
+Step 5: Save the file and Now the xml was created in source file.
+Step 6: Compile the file in the terminal and xml file will generated.
+Step 7: Open the NetAnim using “./NetAnim” command.
+Step 8: Open the first.xml file  in the directory.
+Step 9: Now the output will display in the NetAnim window.
+PROGRAM:
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/csma-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/ipv4-global-routing-helper.h"
+#include "ns3/netanim-module.h"
+using namespace ns3;
+NS_LOG_COMPONENT_DEFINE ("SecondScriptExample");
+int 
+main (int argc, char *argv[])
+{
+  bool verbose = true;
+  if (verbose)
+    {
+      LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+      LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+    }
+  NodeContainer host,router,host1;
+  host.Create (2);
+  router.Create(4);
+  
+  NodeContainer subnet1;
+  subnet1.Add(host.Get(0));
+  subnet1.Add(router.Get(0));
+  
+  PointToPointHelper pointToPoint;
+  pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
+  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+  NetDeviceContainer subnet1Devices;
+  subnet1Devices=pointToPoint.Install (subnet1);
+  
+  InternetStackHelper stack;
+  stack.Install (router);
+  stack.Install (host);
+
+  Ipv4AddressHelper address1,address2,address3,address4,address5,address6;
+  address1.SetBase ("10.1.1.0", "255.255.255.0");
+  Ipv4InterfaceContainer subnet1Interfaces;
+  subnet1Interfaces = address1.Assign (subnet1Devices);
+  
+  NodeContainer subnet2;
+  subnet2.Add(host.Get(0));
+  subnet2.Add(router.Get(1));
+  
+  NetDeviceContainer subnet2Devices;
+  subnet2Devices=pointToPoint.Install (subnet2);
+  address2.SetBase ("10.1.2.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet2Interfaces;
+  subnet2Interfaces = address2.Assign (subnet2Devices);
+  
+  NodeContainer subnet3;
+  subnet3.Add(host.Get(1));
+  subnet3.Add(router.Get(2));
+  
+  NetDeviceContainer subnet3Devices;
+  subnet3Devices=pointToPoint.Install (subnet3);
+  address3.SetBase ("10.1.3.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet3Interfaces;
+  subnet3Interfaces = address3.Assign (subnet3Devices);
+  
+  NodeContainer subnet4;
+  subnet4.Add(host.Get(1));
+  subnet4.Add(router.Get(3));
+  
+  NetDeviceContainer subnet4Devices;
+  subnet4Devices=pointToPoint.Install (subnet4);
+  address4.SetBase ("10.1.4.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet4Interfaces;
+  subnet4Interfaces = address4.Assign (subnet4Devices);
+  NodeContainer subnet5;
+  subnet5.Add(router.Get(2));
+  subnet5.Add(host.Get(1));
+  
+  NetDeviceContainer subnet5Devices;
+  subnet5Devices=pointToPoint.Install (subnet5);
+  address5.SetBase ("10.1.5.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet5Interfaces;
+  subnet5Interfaces = address5.Assign (subnet5Devices);
+
+  UdpEchoServerHelper echoServer (9);
+  ApplicationContainer serverApps = echoServer.Install (subnet5.Get(1));
+  serverApps.Start (Seconds (1.0));
+  serverApps.Stop (Seconds (10.0));
+
+  UdpEchoClientHelper echoClient (subnet5Interfaces.GetAddress (1), 9);
+  echoClient.SetAttribute ("MaxPackets", UintegerValue (3));
+  echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+
+  ApplicationContainer clientApps = echoClient.Install (subnet1.Get (0));
+  clientApps.Start (Seconds (1.0));
+  clientApps.Stop (Seconds (10.0));
+
+  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+  
+  AnimationInterface anim("anim1.xml");
+  anim.SetConstantPosition(host.Get(0),1.0,5.0);
+  anim.SetConstantPosition(host.Get(1),5.0,10.0);
+  Simulator::Run ();
+  Simulator::Destroy ();
+  return 0;
+}
+
+OUTPUT:
+
+ 
+ 
+
+
+
+
+
+RESULT:
+Thus the program to connecting multiple routers and nodes and building a hybrid topology using was executed and output was successfully verified.
+
+Ex.No:8b	Connecting Multiple Routers and Nodes and Building Hybrid Topology to calculate the performance in NS3
+	
+
+AIM:
+To write the program to connect multiple routers and nodes for building a hybrid topology in NS3.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “second.cc” in scratch folder and add the NetAnim module.
+Step 4: Create multi routers and nodes for hybrid topology in the second.cc file.
+Step 5: Save the file and Now the xml was created in source file.
+Step 6: Compile the file in the terminal and xml file will generated.
+Step 7: Open the NetAnim using “./NetAnim” command.
+Step 8: Open the first.xml file in the directory.
+Step 9: Now the output will display in the NetAnim window.
+PROGRAM:
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/csma-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/ipv4-global-routing-helper.h"
+#include "ns3/netanim-module.h"
+using namespace ns3;
+NS_LOG_COMPONENT_DEFINE ("SecondScriptExample");
+int 
+main (int argc, char *argv[])
+{
+  bool verbose = true;
+  if (verbose)
+    {
+      LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+      LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+    }
+  NodeContainer host,router,host1;
+  host.Create (2);
+  router.Create(4);
+  
+  NodeContainer subnet1;
+  subnet1.Add(host.Get(0));
+  subnet1.Add(router.Get(0));
+  
+  PointToPointHelper pointToPoint;
+  pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
+  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+  NetDeviceContainer subnet1Devices;
+  subnet1Devices=pointToPoint.Install (subnet1);
+  
+  InternetStackHelper stack;
+  stack.Install (router);
+  stack.Install (host);
+
+  Ipv4AddressHelper address1,address2,address3,address4,address5,address6;
+  address1.SetBase ("10.1.1.0", "255.255.255.0");
+  Ipv4InterfaceContainer subnet1Interfaces;
+  subnet1Interfaces = address1.Assign (subnet1Devices);
+  
+  NodeContainer subnet2;
+  subnet2.Add(host.Get(0));
+  subnet2.Add(router.Get(1));
+  
+  NetDeviceContainer subnet2Devices;
+  subnet2Devices=pointToPoint.Install (subnet2);
+  address2.SetBase ("10.1.2.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet2Interfaces;
+  subnet2Interfaces = address2.Assign (subnet2Devices);
+  
+  NodeContainer subnet3;
+  subnet3.Add(host.Get(1));
+  subnet3.Add(router.Get(2));
+  
+  NetDeviceContainer subnet3Devices;
+  subnet3Devices=pointToPoint.Install (subnet3);
+  address3.SetBase ("10.1.3.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet3Interfaces;
+  subnet3Interfaces = address3.Assign (subnet3Devices);
+  
+  NodeContainer subnet4;
+  subnet4.Add(host.Get(1));
+  subnet4.Add(router.Get(3));
+  
+  NetDeviceContainer subnet4Devices;
+  subnet4Devices=pointToPoint.Install (subnet4);
+  address4.SetBase ("10.1.4.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet4Interfaces;
+  subnet4Interfaces = address4.Assign (subnet4Devices);
+  NodeContainer subnet5;
+  subnet5.Add(router.Get(2));
+  subnet5.Add(host.Get(1));
+  
+  NetDeviceContainer subnet5Devices;
+  subnet5Devices=pointToPoint.Install (subnet5);
+  address5.SetBase ("10.1.5.0", "255.255.255.0");
+  
+  Ipv4InterfaceContainer subnet5Interfaces;
+  subnet5Interfaces = address5.Assign (subnet5Devices);
+
+  UdpEchoServerHelper echoServer (9);
+  ApplicationContainer serverApps = echoServer.Install (subnet5.Get(1));
+  serverApps.Start (Seconds (1.0));
+  serverApps.Stop (Seconds (10.0));
+
+  UdpEchoClientHelper echoClient (subnet5Interfaces.GetAddress (1), 9);
+  echoClient.SetAttribute ("MaxPackets", UintegerValue (3));
+  echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+
+  ApplicationContainer clientApps = echoClient.Install (subnet1.Get (0));
+  clientApps.Start (Seconds (1.0));
+  clientApps.Stop (Seconds (10.0));
+
+  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+  
+  AnimationInterface anim("anim1.xml");
+  anim.SetConstantPosition(host.Get(0),1.0,2.0);
+  anim.SetConstantPosition(host.Get(1),2.0,3.0);
+
+  Simulator::Run ();
+  Simulator::Destroy ();
+  return 0;
+}
+OUTPUT:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the program to connecting multiple routers and nodes and building a hybrid topology and calculating the performance was executed and output was successfully verified.
+
+
+Ex.No:9	Implementation of FTP using TCP Bulk Transfer in NS3
+	
+
+AIM:
+To write the program to implement of FTP using TCP Bulk Transfer in NS3.
+ALGORITHM:
+Step 1: Open the terminal in linux to execute the Network Simulator.
+Step 2: Navigate to the NetAnim folder.
+Step 3: Open the file “tcp bulk” in ns3.33 folder.
+Step 4: Save the file in scratch folder.
+Step 5: Compile the file in the terminal.
+Step 8: Open the first.xml file in the directory.
+Step 9: Now the output will display in the NetAnim window.
+PROGRAM:
+#include <string>
+ #include <fstream>
+ #include "ns3/core-module.h"
+ #include "ns3/point-to-point-module.h"
+ #include "ns3/internet-module.h"
+ #include "ns3/applications-module.h"
+ #include "ns3/network-module.h"
+ #include "ns3/packet-sink.h"
+ using namespace ns3;
+ 
+ NS_LOG_COMPONENT_DEFINE ("TcpBulkSendExample");
+  
+  int
+ main (int argc, char *argv[])
+ {
+    bool tracing = false;
+    uint32_t maxBytes = 0;
+   
+    CommandLine cmd;
+    cmd.AddValue ("tracing", "Flag to enable/disable tracing", tracing);
+    cmd.AddValue ("maxBytes", "Total number of bytes for application to send", maxBytes);
+    cmd.Parse (argc, argv);
+   
+    NS_LOG_INFO ("Create nodes.");
+    NodeContainer nodes;
+    nodes.Create (2);
+    
+    NS_LOG_INFO ("Create channels.");
+    
+    PointToPointHelper pointToPoint;
+    pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("500Kbps"));
+    pointToPoint.SetChannelAttribute ("Delay", StringValue ("5ms"));
+    NetDeviceContainer devices;
+    devices = pointToPoint.Install (nodes);
+    
+    InternetStackHelper internet;
+    internet.Install (nodes);
+    NS_LOG_INFO ("Assign IP Addresses.");
+    Ipv4AddressHelper ipv4;
+    ipv4.SetBase ("10.1.1.0", "255.255.255.0");
+    Ipv4InterfaceContainer i = ipv4.Assign (devices);
+    
+    NS_LOG_INFO ("Create Applications.");
+    uint16_t port = 9;      
+    BulkSendHelper source ("ns3::TcpSocketFactory",
+                             InetSocketAddress (i.GetAddress (1), port));
+     source.SetAttribute ("MaxBytes", UintegerValue (maxBytes));
+    ApplicationContainer sourceApps = source.Install (nodes.Get (0));
+     sourceApps.Start (Seconds (0.0));
+     sourceApps.Stop (Seconds (10.0));
+   
+     PacketSinkHelper sink ("ns3::TcpSocketFactory",
+                            InetSocketAddress (Ipv4Address::GetAny (), port));
+     ApplicationContainer sinkApps = sink.Install (nodes.Get (1));
+     sinkApps.Start (Seconds (0.0));
+     sinkApps.Stop (Seconds (10.0));
+   
+     if (tracing)
+      {
+         AsciiTraceHelper ascii;
+         pointToPoint.EnableAsciiAll (ascii.CreateFileStream ("tcp-bulk-send.tr"));
+         pointToPoint.EnablePcapAll ("tcp-bulk-send", false);
+       }
+   
+     NS_LOG_INFO ("Run Simulation.");
+     Simulator::Stop (Seconds (10.0));
+     Simulator::Run ();
+     Simulator::Destroy ();
+     NS_LOG_INFO ("Done.");
+  
+     Ptr<PacketSink> sink1 = DynamicCast<PacketSink> (sinkApps.Get (0));
+     std::cout << "Total Bytes Received: " << sink1->GetTotalRx () << std::endl;
+  }
+
+OUTPUT:
+ 
+
+
+RESULT:
+      Thus the implementation of ftp using tcp bulk transfer was successfully executed and output was verified.
+
+
+Ex.No:10a	Analyzing Network traces using Wireshark 
+	
+
+AIM:
+To analyze the network traces using Wireshark.
+ALGORITHM:
+Step 1: Open the Command Prompt as Administrator.
+Step 2: Get the IP address using command ipconfig.
+Step 3: Select the network using ping <IP Address>.
+Step 4: Now the network is connected to see in wireshark.
+Step 5: Open the wireshark and select the network.
+Step 6: Click analysze to analyzing the network..
+Step 7: Stop the analyze.
+
+COMMANDS:
+IP CONFIGURATION  
+     The ipconfig command displays the basic IP addressing information for each network interface on the Windows system. This information includes both the IP address and subnet mask.
+ipconfig
+ 
+
+Ping Command:
+The ping command sends one datagram per second and prints one line of output for every response received. The ping command calculates round-trip times and packet loss statistics, and displays a brief summary on completion. The ping command completes when the program times out or on receipt of a SIGINT signal.
+ 
+     Select the network and select capture from the menu.
+ 
+
+    Then, the network traces are captured in wireshark.
+
+ 
+
+Data transmission form specific IP address is monitored using ip.addr and also transmission using specific protocol is filtered.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the analyzing the traces of network was successfully analysed and verified.
+
+
+
+Ex.No:10b	HTTP & DNS Operation Study using Wireshark 
+	
+AIM:
+To study the network traces of HTTP and DNS using Wireshark.
+ALGORITHM:
+Step 1: Open the Command Prompt as Administrator.
+Step 2: Get the IP address using command ipconfig.
+Step 3: Select the network using ping <IP Address>.
+Step 4: Now the network is connected to see in wireshark.
+Step 5: Open the wireshark and select the network.
+Step 6: Click search bar, type the dns and http to analyzing the network..
+Step 7: Stop the analyze.
+
+COMMANDS:
+HTTP:
+The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack.
+
+
+ 
+
+
+
+
+DNS:
+The Domain Name System (DNS) protocol is an important part of the web's infrastructure, serving as the Internet's phone book: every time you visit a website, your computer performs a DNS lookup.
+ 
+
+ 
+
+
+
+
+
+
+RESULT:
+Thus the HTTP and DNS was studied in the network and analyzed.
+
+
+
+
+Content Beyond Syllabus
+
+
+
+
+
+Ex.No:11	Calculate the Message Digest of a Text Using the SHA-1 Algorithm
+	
+
+AIM:
+To calculate the message digest of a text using the SHA-1 algorithm in Java.
+ALGORITHM:
+Step 1: Append Padding bits.
+Step 2: Append Length - 64 bits are appended to the end.
+Step 3: Prepare Processing Functions.
+Step 4: Initialize Buffers.
+Step 5:  Processing Message in 512-bit blocks (L blocks in total message).
+PROGRAM:
+import java.util.Scanner;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+public class sha1
+{
+public static void main(String[] args)throws NoSuchAlgorithmException
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the String:");
+String message = new String();
+message = sc.next();
+System.out.println("Mesage Digest is=");
+System.out.println(sha1(message));
+}
+static String sha1(String input)throws NoSuchAlgorithmException
+{
+MessageDigest mDigest = MessageDigest.getInstance("SHA1");
+byte[] result = mDigest.digest(input.getBytes());
+StringBuffer sb = new StringBuffer();
+for(int i = 0;i<result.length;i++){
+
+sb.append(Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1));
+}
+return sb.toString();
+}
+}
+
+OUTPUT:
+C:\Security Lab New\programs>java sha1
+Enter the String:
+CORONA VIRUS DISEASE
+Mesage Digest is= 7690b7ccb987f4b3f32d2b9e7e8a69db2d0ded02
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+Thus the Secure Hash Algorithm (SHA-1) has been implemented and executed successfully.
